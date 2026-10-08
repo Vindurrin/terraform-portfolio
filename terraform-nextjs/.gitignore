@@ -1,0 +1,22 @@
+# Provider binaries and backend cache (recreated by `terraform init`)
+.terraform/
+
+# Local state (real state lives in the S3 backend; these can contain secrets)
+*.tfstate
+*.tfstate.*
+
+# Saved plans (can contain secrets)
+tfplan
+*.tfplan
+
+# Crash logs and local overrides
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable files that may hold secrets
+*.tfvars
+*.tfvars.json
